@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento da imagem de fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         body{
             background-color: black;
-            background-image: url("imagens/wallpaper002.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
+            background:black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;
             height:100vh;
         }
         main{
             background-color: white;
             padding: 15px;
-            width: 400px;
+            width: 300px;
             border-radius: 15px;
             margin: auto;
             border: 2px solid black;
+        }
+        p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando Itens Verticalmente</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: rgb(87, 0, 128);
+            width: 500px;
+            height: 500px;
+            position:relative;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        aside{
+            background-color: yellow;
+            width: 200px;
+            height:200px;
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform:translate(-50%, -50%);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <aside>
+
+        </aside>
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste|Modo DARK</title>
+    <style>
+        body{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao{
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 70px;
+            width:400px;
+            height:150px;
+            background-color: rgb(220, 220, 220);
+            transition: all 0.5s ease;
+        }
+        .botao:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.523);
+        }
+        .circulo{
+            margin: 30px;
+            width:100px;
+            height:100px;
+            border-radius: 50%;
+            background-image: url(moon.ico);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="botao" id="botao">
+        <div class="circulo" id="circulo" onclick="mover()"></div>
+    </div>
+    <script>
+        let botao = document.querySelector("#botao");
+        let circulo = document.querySelector("#circulo");
+        let body = document.querySelector("body");
+
+        function mover(){
+            botao.style.flexDirection = "row-reverse";
+            body.style.backgroundColor = "rgb(27, 20, 37)";
+            botao.style.backgroundColor = "black";
+            circulo.style.backgroundImage = "url(sun.ico)";
+        }
+    </script>
+</body>
+</html>
